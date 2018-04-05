@@ -1,0 +1,98 @@
+Basics of Github
+
+1. To initialise local git repository on the hard drive
+
+git init
+
+2. Clear the gitbash screen
+
+clear
+
+3. To link the local repository to the github origin
+
+git remote add origin "https://github.com/richie312/NLP.git"
+
+4. To pull the files from the central repository into the local repository.
+
+git pull origin master
+
+5. In order to know which files are already added and which are not?
+
+git status. "The file are which are in red indicates that are not yet added to the track of master origin."
+
+6. To add the files on to the master repository,
+
+git add <filename>
+
+git add Lexicon\
+
+7. To commit
+
+git commit -m "Files added by Richie @ 4th Apr"
+
+8. To get the history of commit
+
+git log
+
+9. in order to look for the files in different branches,
+
+ls
+
+10. in order to create a branch
+
+git branch firstbranch
+
+11. To switch to the other branch,
+
+git checkout <branchname>
+
+git checkout firstbranch
+
+### Merging the branches
+
+12. Merge the branches
+
+git merge <name of the branch> ## All the newly created files and folder in that branch will now be updated on to the other
+branch as well.
+
+13. Rebase the branches
+
+Created two more files in first branch and then went to master branch in order to rebase the firstbranch
+
+git rebase firstbranch
+
+#### Connection between the github account and local computer
+
+Generate the publich ssh keygen with the password with the following command,
+
+ssh-keygen
+(Nirvikalpa@123)
+
+In order to see the keygen, simply copy the locastion where it is saved with the cat command,
+
+cat 
+
+Then copy the ssh keygen
+
+go to settings in github account, click on ssh and gpg keys
+
+create new ssh key and paste the keygen provided by the gitbash
+
+14. To connect to the github account with bash
+
+ssh -T git@github.com
+
+15. Pushing the files from the branches to Central Repository (Github Repository).
+
+git push origin <name of the branch>
+
+16. Revert to older files
+
+just go to git log and paste the first 8 hexadecimal digits along with the files in order to revert in the following manner,
+
+git check out <commit 8 digits> <Filename.extension>
+
+17. Check the inside of the file with the following command,
+
+cat recert.R
+
