@@ -1,10 +1,25 @@
+
 <!DOCTYPE html>
-  <head>
-    <html>
+  <html>
+  <style>
+    h2{
+
+      text-align: center;
+    }
+    h3{
+      text-align: center;
+    }
+    p{
+      color: blue;
+    }
+    </style>
+
+
+    <head>
     <meta charset = "utf-8">
     <title>Basics of Git version and Github</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  </head>
+    </head>
   <body>
     <nav class="navbar navbar-inverse">
   <div class="container-fluid">
@@ -27,9 +42,7 @@
   </div>
 
 
-    <p>
-
-      <div id="Linking Central Repository">
+      <div id="Linking Central Repository" class="container">
 
         <h2> Linking Central Repository</h2>
 
@@ -50,7 +63,7 @@
 
   </div>
 
-  <div id= Commit>
+  <div id= Commit class="container">
     <h2> Git Commit</h2>
     <li>In order to know which files are already added and which are not?
 
@@ -84,13 +97,15 @@
         the following instructions,
         Note: commit is the alpha numeric string which you will get from git log
     </thead>
-    <ul>
+    <div class="well well-sm">
+    <ul >
       <li><code>git reset --hard 1c4e3847a13a9420315a924968cf564127089cdc</code></li>
       <li><code>git reset --hard origin/master</code></li>
     </ul>
+  </div>
 
   </div>
-  <div id="Merging">
+  <div id="Merging" class="container">
     <h2> Merging </h2>
 
     <li>in order to look for the files in different branches,
@@ -117,7 +132,7 @@
     <code>git rebase firstbranch</code></li>
 
   </div>
-  <div id="ssh-keygen">
+  <div id="ssh-keygen" class="container">
     <h2> Optional; ssh Keygen</h2>
 
     <li>Generate the publich ssh keygen with the password with the following command,
@@ -138,23 +153,22 @@
      	<code>ssh -T git@github.com</code></li>
     </div>
 
-    <div id="Clone">
+    <div id="Clone" class="container">
       <h2>Git Clone</h2>
        <p> To the add any repository from github to local hard drive, follow the below instructions,</p>
        <ul> change the directory to the desired location on local hard drive by the following command on windows 10 from the
          command prompt</ul>
-         <div>
+         <div class="well well-sm">
            <ul>
-             <code><li>D:</li>
-             <li>cd D:\GitHUb_Basics\Pull_from_Master</li>
-             <li>git clone "git clone "https://github.com/richie312/GitHub_basics.git""</li>
-             </code>
+             <li><code>D:</code></li>
+             <li><code>cd D:\GitHUb_Basics\Pull_from_Master</code></li>
+             <li><code>git clone "git clone "https://github.com/richie312/GitHub_basics.git""</code></li>
+
           </ul>
         </div>
 
     </div>
 
-  </p>
   </body>
 
 
