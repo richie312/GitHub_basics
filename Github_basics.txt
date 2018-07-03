@@ -80,7 +80,7 @@ create new ssh key and paste the keygen provided by the gitbash
 
 14. To connect to the github account with bash
 
-ssh -T git@github.com
+ 	ssh -T git@github.com
 
 15. Pushing the files from the branches to Central Repository (Github Repository).
 
